@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Event Form</title>
+  <link rel="stylesheet" href="createevent.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Honk&family=Nabla&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="main">
+    <img src="./bgimg.jpg" alt="">
+    <div class="imp">
+  <div style="background-color: rgb(217, 195, 139); margin-top: 0vw;" class="container">
+    <h2 id="title">Create Event Form</h2>  
+    <form action="#" method="post">
+      <fieldset style="font-weight: bolder;">
+        <legend>Event Details:</legend>
+        <label for="eventName">Event Name:</label>
+        <input type="text" id="eventName" name="eventName">
+
+        <label for="dateTime">Date & Time:</label>
+        <input type="datetime-local" id="dateTime" name="dateTime">
+
+        <label for="venue">Venue:</label>
+        <input type="text" id="venue" name="venue">
+
+        <label for="attendance">Estimated Attendance:</label>
+        <input type="text" id="attendance" name="attendance">
+      </fieldset>
+<br>
+      <fieldset style="font-weight: bolder;">
+        <legend>Organizer Information:</legend>
+        <label for="organizerName">Committee/Club Name:</label>
+        <input type="text" id="organizerName" name="organizerName">
+
+        <label for="contactPerson">Contact Person:</label>
+        <input type="text" id="contactPerson" name="contactPerson">
+
+        <label for="contactEmail">Contact Email:</label>
+        <input type="email" id="contactEmail" name="contactEmail">
+
+        <label for="contactPhone">Contact Phone:</label>
+        <input type="text" id="contactPhone" name="contactPhone">
+      </fieldset>
+<br>
+      <fieldset style="font-weight: bolder;">
+        <legend>Event Overview:</legend>
+        <textarea id="eventOverview" name="eventOverview" rows="4"></textarea>
+      </fieldset>
+<br>
+      <fieldset style="font-weight: bolder;">
+        <legend>Budget & Resources:</legend>
+        <label for="estimatedBudget">Estimated Budget:</label>
+        <input type="text" id="estimatedBudget" name="estimatedBudget">
+
+        <label for="fundingSources">Funding Sources:</label>
+        <input type="text" id="fundingSources" name="fundingSources">
+
+        <label for="resourceRequirements">Resource Requirements:</label>
+        <textarea id="resourceRequirements" name="resourceRequirements" rows="4"></textarea>
+      </fieldset>
+<br>
+      <fieldset style="font-weight: bolder;">
+        <legend>Marketing Strategy:</legend>
+        <label for="targetAudience">Target Audience:</label>
+        <input type="text" id="targetAudience" name="targetAudience">
+
+        <label for="promotionPlan">Promotion Plan:</label>
+        <textarea id="promotionPlan" name="promotionPlan" rows="4"></textarea>
+      </fieldset>
+<br>
+      <fieldset style="font-weight: bolder;">
+        <legend>Approval Workflow:</legend>
+        <label for="approvers">Select Approvers:</label>
+        <select id="approvers" name="approvers" multiple>
+          <option value="hod">HOD Approval</option>
+          <option value="dean">Dean Approval</option>
+          <option value="director">Director Approval</option>
+        </select>
+      </fieldset>
+<br>
+      <fieldset style="font-weight: bolder;">
+        <legend>Attachments:</legend>
+        <input type="file" id="attachments" name="attachments">
+      </fieldset>
+
+      <button type="submit">Submit Event Proposal</button>
+      <p style="font-weight: bold;">Await Approval Status.</p>
+    </form>
+  </div>
+</div>
+</div>
+</body>
+</html>
